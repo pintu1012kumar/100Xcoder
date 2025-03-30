@@ -36,6 +36,7 @@ const page = async () => {
     redirect("/");
   }
   const problems = await prisma.problem.findMany();
+  console.log("Problems fetched from DB:", problems);
   const userWithSubmissions = await prisma.user.findUnique({
     where: {
       id: user?.id,

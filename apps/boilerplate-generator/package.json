@@ -1,12 +1,18 @@
 {
-  "name": "boilerplate-generator",
-  "module": "index.ts",
-  "type": "module",
-  "private": true,
-  "devDependencies": {
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
+  "compilerOptions": {
+    "lib": ["ESNext", "DOM"],
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleDetection": "force",
+    "jsx": "react-jsx",
+    "allowJs": true,
+
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,  
+    "verbatimModuleSyntax": true,
+    "noEmit": true,  
+
+    "strict": true,
+    "skipLibCheck": true
   }
 }
