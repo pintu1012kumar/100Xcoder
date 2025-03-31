@@ -102,7 +102,7 @@ export const ProblemComponent: React.FC<{ problem: any; isDone: boolean , submis
 // };
 
 // // Render the component in your app:
-// // <ProblemComponent problem={exampleProblem} />
+// <ProblemComponent problem={exampleProblem} />
 
 interface MarkdownRendererProps {
   content: string;
